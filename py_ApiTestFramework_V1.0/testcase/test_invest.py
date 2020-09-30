@@ -68,7 +68,7 @@ class TestInvest(unittest.TestCase):
             else:
                 logger.info('数据库余额检验不通过')
                 check_sql_result = logger.info('数据库检查不通过')
-            # 重新改写DoExcel write_back方法
+            # 重新改写 HandleExcel write_back方法
             HandleExcel.write_back(test_data_path, item['sheet_name'], item['test_id'] + 1,
                                10, check_sql_result)
 
